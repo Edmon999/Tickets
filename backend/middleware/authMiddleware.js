@@ -20,7 +20,7 @@ const protect = asyncHandler(async (req, res, next) => {
       next();
     } catch (err) {
       res.status(401);
-      throw new Error("not authorized araa");
+      throw new Error("not authorized");
     }
   }
   if (!token) {
